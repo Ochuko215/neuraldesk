@@ -1,6 +1,6 @@
-## NeuralDesk — AI-Powered SaaS Workspace
+## NeuralDesk  AI-Powered SaaS Workspace
 
-> A multi-tenant SaaS platform combining an AI writing assistant, code generation, and team collaboration — built for scale.
+> A multi-tenant SaaS platform combining an AI writing assistant, code generation, and team collaboration  built for scale.
 
 ![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -13,9 +13,9 @@
 
 ## Overview
 
-NeuralDesk is a production-grade, multi-tenant AI SaaS platform where teams can write, code, and collaborate — powered by OpenAI GPT-4o and Claude. It features a real-time document editor with AI inline assistance, a code generation sandbox, workspace/team management, and Stripe subscription billing with usage metering.
+NeuralDesk is a production grade, multi-tenant AI SaaS platform where teams can write, code, and collaborate — powered by OpenAI GPT-4o and Claude. It features a real-time document editor with AI inline assistance, a code generation sandbox, workspace/team management, and Stripe subscription billing with usage metering.
 
-This is a full product — not a demo. It handles multi-tenancy at the database level (row-level security), streaming LLM responses, token usage tracking per workspace, and rate-limiting per subscription tier.
+This is a full product  not a demo. It handles multi-tenancy at the database level (row-level security), streaming LLM responses, token usage tracking per workspace, and rate-limiting per subscription tier.
 
 -----
 
@@ -23,20 +23,20 @@ This is a full product — not a demo. It handles multi-tenancy at the database 
 
 ### Core Product
 
--  **AI Writing Assistant** — Inline GPT-4o suggestions, rewrite, summarize, expand, tone adjustment
--  **Code Generation Sandbox** — AI code generation with syntax highlighting and in-browser execution
--  **Rich Document Editor** — Block-based editor (TipTap) with slash commands and real-time autosave
--  **Semantic Search** — Vector-powered search across all workspace documents (pgvector + embeddings)
--  **Team Workspaces** — Invite members, role-based access (owner/admin/member), per-workspace AI usage limits
+ **AI Writing Assistant** Inline GPT-4o suggestions, rewrite, summarize, expand, tone adjustment
+ **Code Generation Sandbox**  AI code generation with syntax highlighting and in-browser execution
+ **Rich Document Editor** Block-based editor (TipTap) with slash commands and real-time autosave
+ **Semantic Search** Vector-powered search across all workspace documents (pgvector + embeddings)
+ **Team Workspaces**  Invite members, role-based access (owner/admin/member), per-workspace AI usage limits
 
 ### Platform
 
--  **Multi-Tenancy** — Full tenant isolation with PostgreSQL Row-Level Security
--  **Subscription Billing** — Stripe Billing with Free/Pro/Team tiers and usage-based metering
--  **Auth** — OAuth (Google, GitHub) + magic link via NextAuth.js
--  **Usage Dashboard** — Real-time token usage, cost tracking, and quota management per workspace
--  **Streaming Responses** — SSE-based streaming for instant AI output feel
--  **Internationalization** — i18n support via next-intl
+ **Multi-Tenancy**  Full tenant isolation with PostgreSQL Row-Level Security
+ **Subscription Billing**  Stripe Billing with Free/Pro/Team tiers and usage-based metering
+ **Auth**  OAuth (Google, GitHub) + magic link via NextAuth.js
+**Usage Dashboard**  Real-time token usage, cost tracking, and quota management per workspace
+ **Streaming Responses** SSE-based streaming for instant AI output feel
+ **Internationalization**  i18n support via next-intl
 
 -----
 
@@ -72,11 +72,11 @@ This is a full product — not a demo. It handles multi-tenancy at the database 
 
 **Key architectural decisions:**
 
-- **Separate AI microservice (FastAPI)** — decouples LLM logic from business logic; allows independent scaling of AI compute
-- **PostgreSQL RLS for multi-tenancy** — enforced at the database level, not application level — eliminates entire class of data leakage bugs
-- **pgvector for embeddings** — keeps vector search co-located with relational data, avoiding a separate vector DB for this scale
-- **Redis for rate limiting + session cache** — token bucket algorithm per workspace/tier
-- **SSE over WebSockets for streaming** — simpler infra, works through proxies, sufficient for unidirectional AI output
+ **Separate AI microservice (FastAPI)**  decouples LLM logic from business logic; allows independent scaling of AI compute
+**PostgreSQL RLS for multi-tenancy** enforced at the database level, not application level  eliminates entire class of data leakage bugs
+ **pgvector for embeddings**  keeps vector search co-located with relational data, avoiding a separate vector DB for this scale
+ **Redis for rate limiting + session cache**  token bucket algorithm per workspace/tier
+**SSE over WebSockets for streaming**  simpler infra, works through proxies, sufficient for unidirectional AI output
 
 -----
 
