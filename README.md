@@ -1,4 +1,4 @@
-## 🤖 NeuralDesk — AI-Powered SaaS Workspace
+## NeuralDesk — AI-Powered SaaS Workspace
 
 > A multi-tenant SaaS platform combining an AI writing assistant, code generation, and team collaboration — built for scale.
 
@@ -11,7 +11,7 @@
 
 -----
 
-## 🌐 Overview
+## Overview
 
 NeuralDesk is a production-grade, multi-tenant AI SaaS platform where teams can write, code, and collaborate — powered by OpenAI GPT-4o and Claude. It features a real-time document editor with AI inline assistance, a code generation sandbox, workspace/team management, and Stripe subscription billing with usage metering.
 
@@ -19,28 +19,28 @@ This is a full product — not a demo. It handles multi-tenancy at the database 
 
 -----
 
-## ✨ Features
+## Features
 
 ### Core Product
 
-- ✍️ **AI Writing Assistant** — Inline GPT-4o suggestions, rewrite, summarize, expand, tone adjustment
-- 💻 **Code Generation Sandbox** — AI code generation with syntax highlighting and in-browser execution
-- 📄 **Rich Document Editor** — Block-based editor (TipTap) with slash commands and real-time autosave
-- 🔍 **Semantic Search** — Vector-powered search across all workspace documents (pgvector + embeddings)
-- 🤝 **Team Workspaces** — Invite members, role-based access (owner/admin/member), per-workspace AI usage limits
+-  **AI Writing Assistant** — Inline GPT-4o suggestions, rewrite, summarize, expand, tone adjustment
+-  **Code Generation Sandbox** — AI code generation with syntax highlighting and in-browser execution
+-  **Rich Document Editor** — Block-based editor (TipTap) with slash commands and real-time autosave
+-  **Semantic Search** — Vector-powered search across all workspace documents (pgvector + embeddings)
+-  **Team Workspaces** — Invite members, role-based access (owner/admin/member), per-workspace AI usage limits
 
 ### Platform
 
-- 🏢 **Multi-Tenancy** — Full tenant isolation with PostgreSQL Row-Level Security
-- 💳 **Subscription Billing** — Stripe Billing with Free/Pro/Team tiers and usage-based metering
-- 🔐 **Auth** — OAuth (Google, GitHub) + magic link via NextAuth.js
-- 📊 **Usage Dashboard** — Real-time token usage, cost tracking, and quota management per workspace
-- 📡 **Streaming Responses** — SSE-based streaming for instant AI output feel
-- 🌍 **Internationalization** — i18n support via next-intl
+-  **Multi-Tenancy** — Full tenant isolation with PostgreSQL Row-Level Security
+-  **Subscription Billing** — Stripe Billing with Free/Pro/Team tiers and usage-based metering
+-  **Auth** — OAuth (Google, GitHub) + magic link via NextAuth.js
+-  **Usage Dashboard** — Real-time token usage, cost tracking, and quota management per workspace
+-  **Streaming Responses** — SSE-based streaming for instant AI output feel
+-  **Internationalization** — i18n support via next-intl
 
 -----
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -80,7 +80,7 @@ This is a full product — not a demo. It handles multi-tenancy at the database 
 
 -----
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 |Layer     |Technology                                              |Reason                                     |
 |----------|--------------------------------------------------------|-------------------------------------------|
@@ -98,7 +98,7 @@ This is a full product — not a demo. It handles multi-tenancy at the database 
 
 -----
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ This is a full product — not a demo. It handles multi-tenancy at the database 
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/neuraldesk.git
+git clone https://github.com/Ochuko215/neuraldesk.git
 cd neuraldesk
 
 # Backend (AI Service)
@@ -161,7 +161,7 @@ NEXT_PUBLIC_API_URL=http://localhost:4000
 
 -----
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 neuraldesk/
@@ -201,7 +201,7 @@ neuraldesk/
 
 -----
 
-## 🔐 Security
+##  Security
 
 - All tenant data isolated via PostgreSQL Row-Level Security policies
 - API keys encrypted at rest (AES-256)
@@ -211,6 +211,6 @@ neuraldesk/
 
 -----
 
-## 📄 License
+## License
 
 MIT © Ogheneochuko Iredia
